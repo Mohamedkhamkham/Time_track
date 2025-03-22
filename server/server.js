@@ -1,8 +1,16 @@
-const app = require("./app");
 
-// ℹ️ Sets the PORT for our app to have access to it. If no env has been set, we hard code it to 5005
-const PORT = process.env.PORT || 5005;
+const express = require('express');
+const routes = require('./routes/rutas.js');
+
+const app = express();
+const PORT = 3000;
+
+app.use('/api', routes);
+
+app.use((req, res, next) => {
+  res.status(404).send('Ruta no encontrada');
+});
 
 app.listen(PORT, () => {
-  console.log(`Server listening on http://localhost:${PORT}`);
+  console.log(`Servidor corriendo en http://localhost:${PORT}`);
 });
