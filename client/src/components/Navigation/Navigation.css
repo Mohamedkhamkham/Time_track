@@ -1,0 +1,30 @@
+.top-navbar {
+  background-color: #002c54;
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 48px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.ymca-logo {
+  height: 28px;
+  width: auto;
+  object-fit: contain;
+}
+
+.profile-link {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.profile-link:hover {
+  color: #e30613; /* Rojo YMCA al pasar el mouse */
+}

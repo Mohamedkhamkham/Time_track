@@ -1,0 +1,17 @@
+.filter-tab {
+    padding: 0.5rem 1rem;
+    border: none;
+    background: #f1f1f1;
+    margin: 0 5px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #333;
+  }
+  .filter-tab.active {
+    background: #005EB8;
+    color: white;
+  }
+  
+
+  
