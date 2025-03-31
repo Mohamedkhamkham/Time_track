@@ -1,0 +1,38 @@
+.btn-entry {
+    background-color: #0057a3;
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    border-radius: 30px;
+    border: none;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .btn-entry:hover {
+    background-color: #004080;
+  }
+  
+  .btn-exit {
+    background-color: #c62828;
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    border-radius: 30px;
+    border: none;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .btn-exit:hover {
+    background-color: #a32020;
+  }
+  
+  .registro-info {
+    margin-top: 1rem;
+    font-size: 0.95rem;
+    color: #444;
+  }
+  
