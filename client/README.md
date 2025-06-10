@@ -1,12 +1,33 @@
-# React + Vite
+# Time Track Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project contains a React frontend and an Express backend.
 
-Currently, two official plugins are available:
+## Setup
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. Install server dependencies:
+   ```bash
+   cd server
+   npm install
+   ```
+2. Install client dependencies:
+   ```bash
+   cd ../client
+   npm install
+   ```
 
-## Expanding the ESLint configuration
+## Running the application
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Start the backend API:
+```bash
+cd server
+npm run dev
+```
+
+Start the React client in a separate terminal:
+```bash
+cd client
+npm run dev
+```
+
+The React app will be available on `http://localhost:5173` and proxies API requests to the server running on port `3000`.
+
