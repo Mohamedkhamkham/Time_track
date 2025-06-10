@@ -7,7 +7,9 @@ const app = express();
 
 require("./config")(app);
 
-require("./routes")(app);
+// Mount API routes under the /api prefix
+const apiRouter = require("./routes/rutas");
+app.use("/api", apiRouter);
 
 
 require("./error-handling")(app);
